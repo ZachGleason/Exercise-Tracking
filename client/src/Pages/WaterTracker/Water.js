@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import Navigate from '../../Components/Navigate';
 import WaterBody from '../../Components/WaterBody';
+
+
 
 
 const Water = () => {

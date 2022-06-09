@@ -1,11 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import Container from "@mui/material/Container";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import ScaleIcon from "@mui/icons-material/Scale";
 
+
 const ProgramBody = () => {
+
+
   return (
     <Container>
       <Box
@@ -56,16 +59,17 @@ const ProgramBody = () => {
               textAlign: "center",
             }}
           >
-            <Button
-              style={{
-                fontSize: "10px",
-                color: "#cfcfcf",
-                textDecoration: "none",
-                border: "1px solid lightgrey",
-              }}
-            >
-              Join Program
-            </Button>
+              <Button
+                style={{
+                  fontSize: "10px",
+                  color: "#cfcfcf",
+                  textDecoration: "none",
+                  border: "1px solid lightgrey",
+                }}
+                href='/weightgain'
+              >
+                Join Program
+              </Button>
           </Typography>
         </Box>
       </Box>
@@ -126,6 +130,7 @@ const ProgramBody = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href="/hypertrophy"
             >
               Join Program
             </Button>
@@ -187,6 +192,7 @@ const ProgramBody = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href="/crossfit"
             >
               Join Program
             </Button>
@@ -249,6 +255,7 @@ const ProgramBody = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href="/powerlifting"
             >
               Join Program
             </Button>

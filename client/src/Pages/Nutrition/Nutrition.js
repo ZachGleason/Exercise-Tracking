@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import axios from 'axios';
 import {Link} from 'react-router-dom';
+import EditIcon from '@mui/icons-material/Edit';
 
 
 const Nutrition = (props) => {
@@ -33,6 +34,7 @@ const Nutrition = (props) => {
             <div key={index}>
                   <Box sx={{ width: 535, height: 100, border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1, overflow: "scroll"}}>
                       <div>
+                      <button style={{ float: "right", borderRadius: 20}}><Link to={`/update/${recipe._id}`}><EditIcon sx={{ color: "black"}}/></Link></button>
                       <button onClick={(e) => {DeleteItem(recipe._id)}} style={{ float: "right", borderRadius: 10}}>X</button>
                         <p style={{ marginLeft: 10, height: 18 }}><b>Recipe Name:</b> {recipe.name}</p>
                         <p style={{ marginLeft: 10, marginTop: -8, height: 5,  width: 110}} ><b>Calories:</b> {recipe.calories}</p>

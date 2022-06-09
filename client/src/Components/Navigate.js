@@ -31,15 +31,6 @@ const Navigate = () => {
 
                                     </Dropdown.Menu>
                                     </Dropdown>
-                                    <Dropdown>
-                                    <Dropdown.Toggle variant="dark" id="dropdown-basic" style={{ color: "grey "}}>
-                                        More
-                                    </Dropdown.Toggle>
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="/contact">Contact</Dropdown.Item>  
-                                        <Dropdown.Item href="/faq">FAQ</Dropdown.Item>
-                                    </Dropdown.Menu>
-                                    </Dropdown>
                             </Navbar>
                             <br />
                     </div>

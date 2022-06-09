@@ -1,6 +1,6 @@
 import React from "react";
-import Navigate from "/Users/zach/Desktop/CodingDojo/RESUME PROJECTS/Exercise/client/src/Components/Navigate.js";
-import ChallengeBody from '/Users/zach/Desktop/CodingDojo/RESUME PROJECTS/Exercise/client/src/Components/ChallengeBody'
+import Navigate from '../../Components/Navigate'
+import ChallengeBody from '../../Components/ChallengeBody'
 
 
 const Challenges = () => {

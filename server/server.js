@@ -6,8 +6,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 require('./config/mongoose.config');
-const allMyRecipeRoutes = require('./routes/recipe.routes')
-allMyRecipeRoutes(app);
+
+
+require('./routes/recipe.routes')(app); 
+require('./routes/water.routes')(app);
+require('./routes/weight.routes')(app);
+
 
 app.listen(8000, () => {
     console.log("Listening at Port 8000!")

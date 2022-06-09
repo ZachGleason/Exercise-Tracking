@@ -61,6 +61,7 @@ const ProgramBody2 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href="/strongman"
             >
               Join Program
             </Button>
@@ -124,6 +125,7 @@ const ProgramBody2 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href="/circuit"
             >
               Join Program
             </Button>
@@ -186,6 +188,7 @@ const ProgramBody2 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href="/highvolume"
             >
               Join Program
             </Button>
@@ -247,6 +250,7 @@ const ProgramBody2 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href="/strength"
             >
               Join Program
             </Button>

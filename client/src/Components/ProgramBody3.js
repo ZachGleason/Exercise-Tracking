@@ -62,6 +62,7 @@ const ProgramBody3 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href='/gymnastics'
             >
               Join Program
             </Button>
@@ -124,6 +125,7 @@ const ProgramBody3 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href='/kettlebell'
             >
               Join Program
             </Button>
@@ -186,6 +188,7 @@ const ProgramBody3 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href='/yoga'
             >
               Join Program
             </Button>
@@ -248,6 +251,7 @@ const ProgramBody3 = () => {
                 textDecoration: "none",
                 border: "1px solid lightgrey",
               }}
+              href='/cardio'
             >
               Join Program
             </Button>
