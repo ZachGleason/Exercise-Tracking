@@ -16,11 +16,12 @@ import "react-responsive-modal/styles.css";
 
 
 const RecipeBody = () => {
+    const [openFirst, setOpenFirst] = React.useState(false);
+    const [openSecond, setOpenSecond] = React.useState(false);
+    const [openThird, setOpenThird] = React.useState(false);
+    const [openFourth, setOpenFourth] = React.useState(false);
+    const [openFifth, setOpenFifth] = React.useState(false);
 
-
-  const [open, setOpen] = useState(false);
-  const onOpenModal = () => setOpen(true);
-  const onCloseModal = () => setOpen(false);
 
   return (
     <Box sx={{ border: "1px solid black", height: "400px", width: "590px", borderRadius: "20px", mt: 0, ml: 0, overflow: "scroll", }}>
@@ -35,7 +36,7 @@ const RecipeBody = () => {
                         <Typography sx={{position: "relative", display: "flex", ml: 3, mt: -10, fontFamily: "Koulen"}}>
                             Steak Dinner
                         </Typography>
-                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple  onClick={onOpenModal}>
+                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple onClick={() => setOpenFirst(true)} >
                             <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -7.5, color: "black"}} />
                         </Button>
                     </Box>
@@ -59,21 +60,11 @@ const RecipeBody = () => {
                         <Typography sx={{ ml: 44, mt: -1, wordSpacing: "42px", fontFamily: "Koulen", fontSize: "15px", color: "darkgrey"}}>
                             Min Kcal Protein
                         </Typography>
-                        <Modal
-                            open={open}
-                            onClose={() => setOpen(false)}
-                            center
-                            classNames={{
-                            overlay: 'customOverlay',
-                            modal: 'customModal',
-                            }}
-                            // styles={bg}
-                            styles={{modal: { width: 900, height: 750 }, overlay: {
+
+                        <Modal open={openFirst} onClose={() => setOpenFirst(false)} center styles={{modal: { width: 900, height: 450 }, overlay: {
                             background: "#cccccc",
                             opacity: 0.7},}}>
-                                <div>
-                                    <p>hello</p>
-                                </div>
+                            <img src={require('../Assets/steakinstructions.jpeg')} alt="steak"></img>
                         </Modal>
                 </Box>
                 <Box sx={{ width: "575px", height: "95px", border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1,   }}>
@@ -82,8 +73,8 @@ const RecipeBody = () => {
                         <Typography sx={{position: "relative", display: "flex", ml: 3.5, mt: -11, fontFamily: "Koulen"}}>
                             Salad Lunch
                         </Typography>
-                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple>
-                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} onClick={onOpenModal}/>
+                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple onClick={() => setOpenSecond(true)}>
+                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} />
                         </Button>
                     </Box>
                     <Box sx={{ width: "130px", height: "25px", borderRadius: "10px", background: "#ffcc99", top: 0, position: "flex", ml: 13, mt: -3}}>
@@ -104,22 +95,13 @@ const RecipeBody = () => {
                         <Typography sx={{ ml: 44, mt: -1, wordSpacing: "30px", fontFamily: "Koulen", fontSize: "15px", color: "darkgrey"}}>
                             Min Kcal Protein
                         </Typography>
-                        <Modal
-                            open={open}
-                            onClose={() => setOpen(false)}
-                            center
-                            classNames={{
-                            overlay: 'customOverlay',
-                            modal: 'customModal',
-                            }}
-                            styles={{modal: { width: 900, height: 750 }, overlay: {
+                        
+                        <Modal open={openSecond} onClose={() => setOpenSecond(false)} center styles={{modal: { width: 900, height: 750 }, overlay: {
                             background: "#cccccc",
-                            opacity: 0.7},
-
-                            }}
-                        >
-
+                            opacity: 0.7},}}>
+                            <img src={require('../Assets/saladinstructions.png')} alt="salad" style={{ height: 650, width: 760}}></img>
                         </Modal>
+        
                 </Box>
                 <Box sx={{ width: "575px", height: "95px", border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1,  }}>
                     <img src={food3} alt="test" width={"100px"} height={"90px"} className="program" overflow={'hidden'}  style={{borderRadius: '20px', marginLeft: "px"}}/>
@@ -127,8 +109,8 @@ const RecipeBody = () => {
                         <Typography sx={{position: "relative", display: "flex", ml: 2, mt: -11, fontFamily: "Koulen"}}>
                             Spaghetti Dinner
                         </Typography>
-                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple>
-                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} onClick={onOpenModal}/>
+                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple onClick={() => setOpenThird(true)}>
+                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} />
                         </Button>
                     </Box>
                     <Box sx={{ width: "130px", height: "25px", borderRadius: "10px", background: "#ffcc99", top: 0, position: "flex", ml: 13, mt: -3}}>
@@ -150,22 +132,10 @@ const RecipeBody = () => {
                         <Typography sx={{ ml: 44, mt: -1, wordSpacing: "42px", fontFamily: "Koulen", fontSize: "15px", color: "darkgrey"}}>
                             Min Kcal Protein
                         </Typography>
-                        <Modal
-                            open={open}
-                            onClose={() => setOpen(false)}
-                            center
-                            classNames={{
-                            overlay: 'customOverlay',
-                            modal: 'customModal',
-                            }}
-                            // styles={bg}
-                            styles={{modal: { width: 900, height: 750 }, overlay: {
+                        <Modal open={openThird} onClose={() => setOpenThird(false)} center styles={{modal: { width: 900, height: 450 }, overlay: {
                             background: "#cccccc",
-                            opacity: 0.7},
-
-                            }}
-                        >
-                            <p>yo</p>
+                            opacity: 0.7},}}>
+                            <img src={require('../Assets/spaghettiinstructions.jpeg')} alt="steak" style={{ height: 400, width: 760}}></img>
                         </Modal>
                 </Box>
                 <Box sx={{ width: "575px", height: "95px", border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1,  }}>
@@ -174,8 +144,8 @@ const RecipeBody = () => {
                         <Typography sx={{position: "relative", display: "flex", ml: 2.5, mt: -11, fontFamily: "Koulen"}}>
                             Chicken n' Rice
                         </Typography>
-                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple>
-                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} onClick={onOpenModal}/>
+                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple onClick={() => setOpenFourth(true)}>
+                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} />
                         </Button>
                     </Box>
                     <Box sx={{ width: "130px", height: "25px", borderRadius: "10px", background: "#ffcc99", top: 0, position: "flex", ml: 13, mt: -3}}>
@@ -198,22 +168,10 @@ const RecipeBody = () => {
                         <Typography sx={{ ml: 44, mt: -1, wordSpacing: "42px", fontFamily: "Koulen", fontSize: "15px", color: "darkgrey"}}>
                             Min Kcal Protein
                         </Typography>
-                        <Modal
-                            open={open}
-                            onClose={() => setOpen(false)}
-                            center
-                            classNames={{
-                            overlay: 'customOverlay',
-                            modal: 'customModal',
-                            }}
-                            // styles={bg}
-                            styles={{modal: { width: 900, height: 750 }, overlay: {
+                        <Modal open={openFourth} onClose={() => setOpenFourth(false)} center styles={{modal: { width: 900, height: 450 }, overlay: {
                             background: "#cccccc",
-                            opacity: 0.7},
-
-                            }}
-                        >
-                            
+                            opacity: 0.7},}}>
+                            <img src={require('../Assets/chickeninstructions.jpeg')} alt="steak" style={{ height: 400, width: 760}}></img>
                         </Modal>
                 </Box>
                 <Box sx={{ width: "575px", height: "95px", border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1,    }}>
@@ -222,8 +180,8 @@ const RecipeBody = () => {
                         <Typography sx={{position: "relative", display: "flex", ml: 2.5, mt: -11, fontFamily: "Koulen"}}>
                             Avacado Toast
                         </Typography>
-                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple>
-                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} onClick={onOpenModal}/>
+                        <Button  style={{ backgroundColor: 'transparent' }} disableRipple onClick={() => setOpenFifth(true)}>
+                            <AddCircleOutlineIcon sx={{ marginLeft: 20, marginTop: -6, color: "black"}} />
                         </Button>
                     </Box>
                     <Box sx={{ width: "130px", height: "25px", borderRadius: "10px", background: "#ffcc99", top: 0, position: "flex", ml: 13, mt: -3}}>
@@ -245,23 +203,12 @@ const RecipeBody = () => {
                         <Typography sx={{ ml: 46, mt: -1, wordSpacing: "30px", fontFamily: "Koulen", fontSize: "15px", color: "darkgrey"}}>
                             Min Kcal Protein
                         </Typography>
-                        <Modal
-                            open={open}
-                            onClose={() => setOpen(false)}
-                            center
-                            classNames={{
-                            overlay: 'customOverlay',
-                            modal: 'customModal',
-                            }}
-                            // styles={bg}
-                            styles={{modal: { width: 900, height: 750 }, overlay: {
+                        <Modal open={openFifth} onClose={() => setOpenFifth(false)} center styles={{modal: { width: 800, height: 850 }, overlay: {
                             background: "#cccccc",
-                            opacity: 0.7},
-
-                            }}
-                        >
-                            
+                            opacity: 0.7},}}>
+                            <img src={require('../Assets/guacinstructions.jpeg')} alt="steak" style={{ height: 800, width: 760}}></img>
                         </Modal>
+                       
                     </Box>
                 </Box>
   )
