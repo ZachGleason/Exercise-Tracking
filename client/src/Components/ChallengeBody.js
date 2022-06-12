@@ -108,7 +108,7 @@ const ChallengeBody = () => {
                 <Box sx={{ height: "10px", width: "25px", borderRadius: "40px", top: 0, position: "absolute", mt: 62, ml: 23, background: "linear-gradient(#66ff33, #ccff66);"}} ></Box>
         </Box>
         {/* */}
-        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: "1px solid white", display: "inline-block", mr: 2, }}>
+        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: '1px solid white', display: "inline-block", mr: 2, }}>
             <img src={Group} width={"347px"} height={"445px"} style={{borderRadius: '40px', position: "absolute" }} alt="cross"></img>
             <Box sx={{ ml: 4.5}}>
                 <Typography sx={{ position: "absolute", color: "white", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 3 }}>
