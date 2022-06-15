@@ -25,13 +25,13 @@ const RecipeBody = () => {
 
   return (
     <Box sx={{ border: "1px solid black", height: "400px", width: "590px", borderRadius: "20px", mt: 0, ml: 0, overflow: "scroll", }}>
-            <Box sx={{ width: "575px", height: "40px", border: "1px solid black", borderRadius: "10px", mt: 1, ml: 1  }}>
+            <Box sx={{ width: "575px", height: "40px", border: "1px solid black", borderRadius: "10px", mt: 1, ml: 1, backgroundColor: "#ffbf70"  }}>
                 <Typography sx={{ textAlign: "center", mt: 1  }}>
                     <b>Recommended Recipes</b>
                 </Typography>
             </Box>
-                <Box sx={{ width: "575px", height: "95px", border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1.5,  }} >
-                    <img src={food1} alt="test" width={"92px"} height={"90px"} className="program" overflow={'hidden'} display={"flex"} style={{borderRadius: '10px', mr: 10 }}/>
+                <Box sx={{ width: "575px", height: "95px", border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1.5  }} >
+                    <img src={food1} alt="test" width={"92px"} height={"90px"} className="program" overflow={'hidden'} display={"flex"} style={{borderRadius: '5px', mr: 10 }}/>
                     <Box sx={{ width: "130px", height: "25px", borderRadius: "10px", background: "#ffcc99", top: 0, position: "flex", ml: 47, mt: -1}}>
                         <Typography sx={{position: "relative", display: "flex", ml: 3, mt: -10, fontFamily: "Koulen"}}>
                             Steak Dinner
@@ -41,7 +41,7 @@ const RecipeBody = () => {
                         </Button>
                     </Box>
                     <Box sx={{ width: "130px", height: "25px", borderRadius: "10px", background: "#ffcc99", top: 0, position: "flex", ml: 13, mt: -3}}>
-                        <Typography sx={{fontFamily: "Koulen", letterSpacing: "0.5px", ml: 4, mt: 1}}>
+                        <Typography sx={{fontFamily: "Koulen", letterSpacing: "0.5px", ml: 4, mt: 0}}>
                             Advanced
                         </Typography>
                         <Box sx={{ width: 200, marginTop: 1}}>

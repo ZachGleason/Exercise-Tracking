@@ -12,7 +12,7 @@ const ProgramBody3 = () => {
         sx={{
           width: 250,
           height: 250,
-          borderRadius: 5,
+          borderRadius: 2,
           backgroundColor: "#292929",
           display: "inline-flex"
         }}
@@ -76,7 +76,7 @@ const ProgramBody3 = () => {
         sx={{
           width: 250,
           height: 250,
-          borderRadius: 5,
+          borderRadius: 2,
           backgroundColor: "#292929",
           display: "inline-flex",
           ml: 5
@@ -138,7 +138,7 @@ const ProgramBody3 = () => {
         sx={{
           width: 250,
           height: 250,
-          borderRadius: 5,
+          borderRadius: 2,
           backgroundColor: "#292929",
           display: "inline-flex",
           ml: 5
@@ -201,7 +201,7 @@ const ProgramBody3 = () => {
         sx={{
           width: 250,
           height: 250,
-          borderRadius: 5,
+          borderRadius: 2,
           backgroundColor: "#292929",
           display: "inline-flex",
           ml: 5

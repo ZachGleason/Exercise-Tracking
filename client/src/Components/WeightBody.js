@@ -31,18 +31,18 @@ const WeightBody = () => {
     }, []);
     
   return (
-    <Container sx={{width: 1000, height: 500, backgroundColor: "white", borderRadius: 5}}>
-        <Box sx={{ height: 480, width: 550, border: "1px solid black", mt: 1, borderRadius: 5, overflow: "scroll"}}>
+    <Container sx={{width: 1000, height: 500, backgroundColor: "white", borderRadius: 5, paddingTop: .1}}>
+        <Box sx={{ height: 485, width: 550, border: "1px solid black", mt: 1, borderRadius: 5, overflow: "scroll"}}>
         <div>
-            <Box sx={{width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1 }}>
+            <Box sx={{width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1, backgroundColor: "#82b9ff" }}>
               <Typography sx={{ textAlign: "Center"}}><b>Weight Log</b> </Typography>
             </Box>
             {weight?.map((weight, index) => ( 
-             <Box sx={{ width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1 }}>
+             <Box sx={{ width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1, backgroundColor: "#cce1fc" }}>
               <div key={index} >
-                  <p style={{display: "inline-block", marginLeft: 10}}>Weight {weight.amount}(lbs)</p>
-                  <p style={{display: "inline-block",  marginLeft: 20}}>Time: {weight.time}</p>
-                  <p style={{display: "inline-block",  marginLeft: 20}}>Date: {weight.date}</p>
+                  <p style={{display: "inline-block", marginLeft: 10}}>Weight: <b>{weight.amount}</b>(lbs)</p>
+                  <p style={{display: "inline-block",  marginLeft: 20}}>Time: <b>{weight.time}</b></p>
+                  <p style={{display: "inline-block",  marginLeft: 20}}>Date: <b>{weight.date}</b></p>
                   <Link to={`/updating/${weight._id}`}><EditIcon sx={{ color: "black", fontSize: 20, marginLeft: 2}}/></Link>
                   <DeleteOutlineIcon sx={{ color: "black", fontSize: 20, marginLeft: 2}} onClick={(e) => {DeleteItem(weight._id)}}/>
               </div>
@@ -50,7 +50,7 @@ const WeightBody = () => {
             ))}
         </div>
         </Box>
-        <Box sx={{ position: "absolute", mt: -45, ml: 15}}>
+        <Box sx={{ position: "absolute", mt: -50, ml: 15}}>
             <WeightInput />
         </Box>
     </Container>

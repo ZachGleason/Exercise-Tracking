@@ -2,15 +2,15 @@ const mongoose = require('mongoose');
 
 const WaterSchema = new mongoose.Schema({
     amount: {
-    Number,
+    type: Number,
     required: [true, "Amount is required!"],
     },
     time: {
-    String,
+    type: String,
     required: [true, "Time is required!"],
     },
     date: {
-    String,
+    type: String,
     required: [true, "Date is required!"],
     },
 }, 

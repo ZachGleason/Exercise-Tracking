@@ -23,9 +23,9 @@ const ChallengeBody = () => {
     const [openSixth, setOpenSixth] = React.useState(false);
     
   return (
-    <Container sx={{ margin: "auto", width: 1200}}>
-        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: "1px solid white", display: "inline-block", mr: 2, mb: 4 }}>
-            <img src={Cross} width={"345px"} height={"445px"} style={{borderRadius: '40px', mt: 2, position: "absolute" }} alt="cross"></img>
+    <Container sx={{ margin: "auto", width: 1200 }}>
+        <Box sx={{ width: 350, height: 450, borderRadius: 5, border: "1px solid white", display: "inline-block", mr: 2, mb: 4 }}>
+            <img src={Cross} width={"348px"} height={"448px"} style={{borderRadius: '20px', mt: 2, position: "absolute" }} alt="cross"></img>
             <Box sx={{ ml: 4.5}}>
                 <Typography sx={{ position: "absolute", color: "white", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 4 }}>
                     Powerlifting Challenge
@@ -52,8 +52,8 @@ const ChallengeBody = () => {
                 <Box sx={{ height: "10px", width: "25px", borderRadius: "40px", top: 0, position: "absolute", mt: 62, ml: 27, background: "linear-gradient(#ffff66, #ff9933);"}} ></Box>
         </Box>
         {/*  */}
-        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: "1px solid white", display: "inline-block", mr: 2, mb: 4}}>
-            <img src={Cycle} width={"347px"} height={"445px"} style={{borderRadius: '40px', mt: 2, position: "absolute" }} alt="cross"></img>
+        <Box sx={{ width: 350, height: 450, borderRadius: 5, border: "1px solid white", display: "inline-block", mr: 2, mb: 4}}>
+            <img src={Cycle} width={"348px"} height={"448px"} style={{borderRadius: '20px', mt: 2, position: "absolute" }} alt="cross"></img>
             <Box sx={{ ml: 4.5}}>
                 <Typography sx={{ position: "absolute", color: "white", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 10 }}>
                    H.I.T Training
@@ -81,10 +81,10 @@ const ChallengeBody = () => {
                 <Box sx={{ height: "10px", width: "25px", borderRadius: "40px", top: 0, position: "absolute", mt: 62, ml: 31, background: "linear-gradient(#ff6600, #ff0000);"}} ></Box>
         </Box>
         {/*  */}
-        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: "1px solid white", display: "inline-block", mr: 2, mb: 4}}>
-            <img src={Water} width={"345px"} height={"445px"} style={{borderRadius: '40px', mt: 2, position: "absolute" }} alt="cross"></img>
+        <Box sx={{ width: 350, height: 450, borderRadius: 5, border: "1px solid white", display: "inline-block", mr: 2, mb: 4}}>
+            <img src={Water} width={"348px"} height={"448px"} style={{borderRadius: '20px', mt: 2, position: "absolute" }} alt="cross"></img>
             <Box sx={{ ml: 4.5}}>
-                <Typography sx={{ position: "absolute", color: "gray", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 4 }}>
+                <Typography sx={{ position: "absolute", color: "white", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 4 }}>
                     Drink Water Challenge
                 </Typography>
                 <Typography sx={{ position: "absolute", color: "white", fontSize: "15px", mt: 3.5, fontFamily: "Staatliches", letterSpacing: 1.5, ml: 5.5 }}>
@@ -108,8 +108,8 @@ const ChallengeBody = () => {
                 <Box sx={{ height: "10px", width: "25px", borderRadius: "40px", top: 0, position: "absolute", mt: 62, ml: 23, background: "linear-gradient(#66ff33, #ccff66);"}} ></Box>
         </Box>
         {/* */}
-        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: '1px solid white', display: "inline-block", mr: 2, }}>
-            <img src={Group} width={"347px"} height={"445px"} style={{borderRadius: '40px', position: "absolute" }} alt="cross"></img>
+        <Box sx={{ width: 350, height: 450, borderRadius: 5, border: '1px solid white', display: "inline-block", mr: 2, }}>
+            <img src={Group} width={"348px"} height={"448px"} style={{borderRadius: '20px', position: "absolute" }} alt="cross"></img>
             <Box sx={{ ml: 4.5}}>
                 <Typography sx={{ position: "absolute", color: "white", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 3 }}>
                     Group Exercise Challenge
@@ -137,8 +137,8 @@ const ChallengeBody = () => {
                 <Box sx={{ height: "10px", width: "25px", borderRadius: "40px", top: 0, position: "absolute", mt: 123, ml: 31, background: "linear-gradient(#ff6600, #ff0000);"}} ></Box>
         </Box>
         {/*  */}
-        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: "1px solid white", display: "inline-block", mr: 2, }}>
-            <img src={Lift} width={"345px"} height={"445px"} style={{borderRadius: '40px',  position: "absolute" }} alt="cross"></img>
+        <Box sx={{ width: 350, height: 450, borderRadius: 5, border: "1px solid white", display: "inline-block", mr: 2, }}>
+            <img src={Lift} width={"348px"} height={"448px"} style={{borderRadius: '20px',  position: "absolute" }} alt="cross"></img>
             <Box sx={{ ml: 4.5}}>
                 <Typography sx={{ position: "absolute", color: "white", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 4 }}>
                     BodyBuilding Challenge
@@ -165,8 +165,8 @@ const ChallengeBody = () => {
                 <Box sx={{ height: "10px", width: "25px", borderRadius: "40px", top: 0, position: "absolute", mt: 123, ml: 27, background: "linear-gradient(#ffff66, #ff9933);"}} ></Box>
         </Box>
         {/*  */}
-        <Box sx={{ width: 350, height: 450, borderRadius: 10, border: "1px solid white", display: "inline-block", mr: 2, }}>
-            <img src={Rope} width={"345px"} height={"445px"} style={{borderRadius: '40px',  position: "absolute" }} alt="cross"></img>
+        <Box sx={{ width: 350, height: 450, borderRadius: 5, border: "1px solid white", display: "inline-block", mr: 2, }}>
+            <img src={Rope} width={"348px"} height={"448px"} style={{borderRadius: '20px',  position: "absolute" }} alt="cross"></img>
             <Box sx={{ ml: 4.5}}>
                 <Typography sx={{ position: "absolute", color: "white", fontSize: "20px", fontFamily: "Staatliches", letterSpacing: 1.5, ml: 6 }}>
                     CrossFit Challenge

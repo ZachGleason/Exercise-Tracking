@@ -56,8 +56,8 @@ const Update2 = (props) => {
                 <label htmlFor="date" style={{ marginLeft: 135, fontFamily: "Koulen",  marginLeft: 260}}>Date</label>
                 <input type="text" onChange={(e) => {setDate(e.target.value)}} value={date} name="date" style={{ width: 360, height: 40, display: "inline", marginTop: 10, borderRadius: 5, marginLeft: 100}}/>
 
-                <input type="submit" placeholder='Update' style={{ width: 200, height: 40, borderRadius: 5, marginLeft: 180, marginTop: 50}} cols="40" rows="5"/>
-                <Link to={`/weight`} style={{diplay: "inline"}}><HomeIcon sx={{ color: "black",  marginLeft: 72, marginTop: -9}}/></Link>
+                <input type="submit" placeholder='Update' style={{ width: 200, height: 40, borderRadius: 5, marginLeft: 160, marginTop: 50}} cols="40" rows="5"/>
+                <Link to={`/weight`} style={{diplay: "inline"}}><HomeIcon sx={{ color: "black",  marginLeft: 48, marginTop: -9}}/></Link>
             </form>
         </Container>
     </div>

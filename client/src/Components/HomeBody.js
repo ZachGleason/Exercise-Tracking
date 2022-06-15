@@ -25,6 +25,8 @@ const HomeBody = () => {
                 alignItems: "center",
                 margin: "auto",
                 ml: 10,
+                fontFamily: "serif",
+
               }}
             >
               <b>WELLBEING ISNT JUST FOR SOME,</b>
@@ -39,7 +41,8 @@ const HomeBody = () => {
                 fontWeight: 700,
                 textDecoration: 'none',
                 width: "820px",
-                ml: 40
+                ml: 40,
+                fontFamily: "serif"
 
               }}
             >
@@ -95,7 +98,7 @@ const HomeBody = () => {
               A well-rounded approach to wellbeing
             </Typography>
             <Typography sx={{  fontFamily: "serif", fontSize: "18px", width: "600px"}}>
-              While some programs focus on fitness alone, Wellbeats offers classes to fuel the body and the mind. From all varieties of exercise to meditation, yoga, and nutrition, Wellbeats’ virtual classes give every employee the tools they need to live a healthier life.
+              While some programs focus on fitness alone, Health Leak offers classes to fuel the body and the mind. From all varieties of exercise to meditation, yoga, and nutrition, Wellbeats’ virtual classes give every employee the tools they need to live a healthier life.
             </Typography>
           </Box>
       </Container>

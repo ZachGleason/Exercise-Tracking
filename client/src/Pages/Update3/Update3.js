@@ -45,7 +45,7 @@ const Update3 = (props) => {
   return (
     <div className='updatewrapper'>
         <Navigate />
-        <Container sx={{width: 600, height: 500, backgroundColor: "white", borderRadius: 5}}>
+        <Container sx={{width: 600, height: 400, backgroundColor: "white", borderRadius: 5}}>
             <form onSubmit={ updateWater } style={{ width: 400, marginTop: 50 }}>
                 <label htmlFor="amount" style={{ marginTop: 10, fontFamily: "Koulen", marginLeft: 240}}>Water(oz)</label>
                 <input type="number" onChange={(e) =>{ setAmount(e.target.value)}} value={amount} name='amount'  style={{ width: 360, height: 40, display: "inline", marginTop: 10, borderRadius: 5,  marginLeft: 100}}/>
@@ -56,8 +56,8 @@ const Update3 = (props) => {
                 <label htmlFor="date" style={{ marginLeft: 135, fontFamily: "Koulen",  marginLeft: 260}}>Date</label>
                 <input type="text" onChange={(e) => {setDate(e.target.value)}} value={date} name="date" style={{ width: 360, height: 40, display: "inline", marginTop: 10, borderRadius: 5, marginLeft: 100}}/>
 
-                <input type="submit" placeholder='Update' style={{ width: 200, height: 40, borderRadius: 5, marginLeft: 180, marginTop: 50}} cols="40" rows="5"/>
-                <Link to={`/weight`} style={{diplay: "inline"}}><HomeIcon sx={{ color: "black",  marginLeft: 72, marginTop: -9}}/></Link>
+                <input type="submit" placeholder='Update' style={{ width: 200, height: 40, borderRadius: 5, marginLeft: 160, marginTop: 50}} cols="40" rows="5"/>
+                <Link to={`/weight`} style={{diplay: "inline"}}><HomeIcon sx={{ color: "black",  marginLeft: 47, marginTop: -9}}/></Link>
             </form>
         </Container>
     </div>

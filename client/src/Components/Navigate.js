@@ -17,7 +17,7 @@ const Navigate = () => {
                                     <Nav className="mr-auto">
                                         <Nav.Link href="/challenges">Challenges</Nav.Link>
                                     </Nav>
-                                    <Navbar.Brand href="#home" className='name' >HEALTH LEAK</Navbar.Brand>
+                                    <Navbar.Brand href="/" className='name' >HEALTH LEAK</Navbar.Brand>
                                     <Nav className="mr-auto">
                                         <Nav.Link href="/nutrition">Nutrition</Nav.Link>
                                     </Nav>

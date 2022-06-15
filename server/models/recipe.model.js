@@ -2,23 +2,23 @@ const mongoose = require('mongoose');
 
 const RecipeSchema = new mongoose.Schema({
     name: {
-    String,
+    type: String,
     maxlength: [50, "Recipe Length is over 50 characters!"],
     },
     calories: {
-    Number,
-    required: [true, "Calories is required!"],
+    type: Number,
+    required: [true, "calorie is required"]
     },
     proteins: {
-    Number,
+    type: Number,
     required: [true, "Proteins is required!"],
     },
     fats: {
-    Number,
+    type: Number,
     required: [true, "Fats is required!"],
     },
     description: {
-    String, 
+    type: String, 
     required: [true, "Description is required!"],
     },
 }, 

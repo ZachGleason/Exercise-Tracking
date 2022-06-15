@@ -25,18 +25,18 @@ const Nutrition = (props) => {
       <Navigate />
       <NutritionBody />
         <Box sx={{width: 550, height: 825, border: "2px solid black", borderRadius: 5, ml: 115, top: 0, mt: -109}} className="overflow">
-        <Box sx={{ width: "535px", height: "40px", border: "1px solid black", borderRadius: "10px", mt: 1, ml: 1  }}>
+        <Box sx={{ width: "535px", height: "40px", border: "1px solid black", borderRadius: "10px", mt: 1, ml: 1, backgroundColor: "#44e3bb" }}>
                 <Typography sx={{ textAlign: "center", mt: 1  }}>
                     <b>Your Recipes</b>
                 </Typography>
             </Box>
         {props.recipes.map((recipe, index) => (
             <div key={index}>
-                  <Box sx={{ width: 535, height: 100, border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1, overflow: "scroll"}}>
+                  <Box sx={{ width: 535, height: 100, border: "2px solid black", borderRadius: "10px", ml: 1, mt: 1, overflow: "scroll", backgroundColor: "#d9ffe9"}}>
                       <div>
-                      <button style={{ float: "right", borderRadius: 20}}><Link to={`/update/${recipe._id}`}><EditIcon sx={{ color: "black"}}/></Link></button>
-                      <button onClick={(e) => {DeleteItem(recipe._id)}} style={{ float: "right", borderRadius: 10}}>X</button>
-                        <p style={{ marginLeft: 10, height: 18 }}><b>Recipe Name:</b> {recipe.name}</p>
+                      <button style={{ float: "right", borderRadius: 10, backgroundColor: "white"}}><Link to={`/update/${recipe._id}`}><EditIcon sx={{ color: "black", fontSize: 17}}/></Link></button>
+                      <button onClick={(e) => {DeleteItem(recipe._id)}} style={{ float: "right", borderRadius: 10, backgroundColor: "white"}}>X</button>
+                        <p style={{ marginLeft: 10, height: 18, }}><b>Recipe Name:</b> <p style={{textDecoration: "underline", display: "inline-block"}}>{recipe.name}</p></p>
                         <p style={{ marginLeft: 10, marginTop: -8, height: 5,  width: 110}} ><b>Calories:</b> {recipe.calories}</p>
                         <p style={{ marginLeft: 10, marginTop: 1, height: 5, width: 110}}><b>Protein:</b> {recipe.proteins}(g)</p>
                         <p style={{ marginLeft: 10, marginTop: 1, height: 5, width: 85}} ><b>Fats:</b> {recipe.fats}(g)</p>

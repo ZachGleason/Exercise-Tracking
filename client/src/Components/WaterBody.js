@@ -32,14 +32,14 @@ const WaterBody = () => {
   }, []);
 
   return (
-    <Container sx={{width: 1000, height: 500, backgroundColor: "white", borderRadius: 5}}>
+    <Container sx={{width: 1000, height: 500, backgroundColor: "white", borderRadius: 5, paddingTop: .1}}>
         <Box sx={{ height: 480, width: 550, border: "1px solid black", mt: 1, borderRadius: 5, overflow: "scroll"}}>
         <div>
-            <Box sx={{width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1 }}>
+            <Box sx={{width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1, backgroundColor: "#82b9ff" }}>
               <Typography sx={{ textAlign: "Center"}}><b>Water Log</b> </Typography>
             </Box>
             {water?.map((water, index) => ( 
-             <Box sx={{ width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1 }}>
+             <Box sx={{ width: 530, height: 30, border: "1px solid black", borderRadius: 5, marginTop: 1, marginLeft: 1, backgroundColor: "#cce1fc"}}>
               <div key={index} >
                   <p style={{display: "inline-block", marginLeft: 10}}>Amount Consumed: {water.amount}(oz)</p>
                   <p style={{display: "inline-block",  marginLeft: 20}}>Time: {water.time}</p>
